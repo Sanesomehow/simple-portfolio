@@ -3,7 +3,7 @@ export const Projects = () => {
     <div className="flex flex-col items-center gap-8">
       <h3 className="text-3xl md:text-4xl font-bold text-color-text-main">Projects</h3>
       <div className="flex flex-col gap-8 w-full max-w-2xl">
-        <div className="flex items-center gap-6 p-6 rounded-lg border border-color-border transition-all duration-300 shadow-lg">
+        <div className="flex items-center gap-6 p-6 rounded-lg border-2 border-color-border transition-all duration-300 shadow-lg">
           <div className="w-16 h-16 rounded-full overflow-hidden border-2 border-color-accent-secondary flex-shrink-0">
             <img src="/image.png" alt="The Room project" className="w-full h-full object-cover bg-black" />
           </div>
