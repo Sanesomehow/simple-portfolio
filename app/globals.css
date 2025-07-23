@@ -1,26 +1,54 @@
 @import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
 :root {
   --background: #ffffff;
   --foreground: #171717;
+  --color-bg: #FFF7F0;
+  --color-text-main: #252422;
+  --color-text-secondary: #76675B;
+  --color-accent-primary: #FFD580;
+  --color-accent-secondary: #E29578;
+  --color-border: #EFE9E2;
+  --font-inter: var(--font-inter);
+  --font-playwrite-id: var(--font-playwrite-id);
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
+.font-inter {
+  font-family: var(--font-inter);
+}
+
+.font-playwrite {
+  font-family: var(--font-playwrite-id);
+}
+
+.dark {
+  --background: #0a0a0a;
+  --foreground: #ededed;
+  --color-bg: #181818;
+  --color-text-main: #E8E6E3;
+  --color-text-secondary: #B0A89F;
+  --color-accent-primary: #F7C873;
+  --color-accent-secondary: #E29578;
+  --color-border: #23201B;
+}
+
+@theme {
+  --color-background: var(--color-bg);
+  --color-foreground: var(--color-text-secondary);
+  --font-sans: var(--font-inter);
   --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  
+  --color-color-bg: var(--color-bg);
+  --color-color-text-main: var(--color-text-main);
+  --color-color-text-secondary: var(--color-text-secondary);
+  --color-color-accent-primary: var(--color-accent-primary);
+  --color-color-accent-secondary: var(--color-accent-secondary);
+  --color-color-border: var(--color-border);
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
+  @apply bg-color-bg text-color-text-secondary;
 }
+
