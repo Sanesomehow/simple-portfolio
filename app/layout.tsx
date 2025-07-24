@@ -31,6 +31,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" suppressHydrationWarning>
+      <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      </head>
       <body className={`${inter.className}`} style={{
         '--font-inter': inter.style.fontFamily,
         '--font-playwrite-id': playwriteId.style.fontFamily,

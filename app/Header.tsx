@@ -19,9 +19,9 @@ export const Header = () => {
             <p>Blog</p>
           </Link>
         </div> */}
-        <div className="flex gap-5 items-center">
+        <div className="flex gap-5 justify-center items-center">
           <ModeToggle />
-          <div className="flex md:hidden items-center">
+          {/* <div className="flex md:hidden items-center">
             <Menu>
               <MenuButton>
                 <svg
@@ -54,7 +54,7 @@ export const Header = () => {
                 </MenuItem>
               </MenuItems>
             </Menu>
-          </div>
+          </div> */}
         </div>
       </div>
     </header>
