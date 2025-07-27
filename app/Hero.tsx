@@ -6,7 +6,7 @@ export const Hero = () => {
   return (
     <div className="flex flex-col items-center gap-8 text-center">
       <div className="space-y-4">
-        <p className="text-4xl md:text-5xl pt-5 font-bold text-color-text-main">
+        <p className="flex items-center flex-col gap-8 md:flex-row md:gap-2 text-4xl md:text-5xl pt-5 font-bold text-color-text-main">
           <span>Hello, I'm </span>
           <span className="text-color-accent-primary text-4xl font-playwrite">Siddhesh.</span>
         </p>
