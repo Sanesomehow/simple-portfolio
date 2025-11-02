@@ -1,6 +1,6 @@
 import { Header } from "./Header";
 import { Hero } from "./Hero";
-import { Projects } from "./Projects";
+import { ProjectsAndBlog } from "./ProjectsAndBlog";
 
 export default function Home() {
   return (
@@ -9,7 +9,7 @@ export default function Home() {
       <Header />
       </div>
       <Hero />
-      <Projects />
+      <ProjectsAndBlog />
     </div>
   );
 }

@@ -2,11 +2,11 @@ export const Projects = () => {
   return (
     <div className="flex flex-col items-center gap-8">
       <h3 className="text-3xl md:text-4xl font-bold text-color-text-main">Projects</h3>
-      <div className="flex flex-col gap-8 w-full max-w-2xl">
+      <div className="flex flex-col gap-8 w-full max-w-2xl mb-10">
         {/* The Room Project */}
         <div className="flex items-center gap-6 p-6 rounded-lg border-2 border-color-border transition-all duration-300 shadow-lg">
-          <div className="w-16 h-16 rounded-full overflow-hidden border-2 border-color-accent-secondary flex-shrink-0">
-            <img src="/theroomlogo.png" alt="The Room project" className="w-full h-full object-cover bg-black" />
+          <div className="w-16 h-16 rounded-full overflow-hidden border-2 border-color-accent-secondary flex-shrink-0 transition-all duration-500 hover:scale-110 hover:rotate-6 hover:border-color-accent-primary">
+            <img src="/theroomlogo.png" alt="The Room project" className="w-full h-full object-cover bg-black transition-transform duration-500 hover:scale-125" />
           </div>
           <div className="flex-grow">
             <a href="https://room-for-everything.vercel.app/" target="_blank">
@@ -36,8 +36,8 @@ export const Projects = () => {
 
         {/* WordWise Project */}
         <div className="flex items-center gap-6 p-6 rounded-lg border-2 border-color-border transition-all duration-300 shadow-lg">
-          <div className="w-16 h-16 rounded-full overflow-hidden border-2 border-color-accent-secondary flex-shrink-0">
-            <img src="/wordwiselogo.png" alt="WordWise project" className="w-full h-full object-cover bg-black" />
+          <div className="w-16 h-16 rounded-full overflow-hidden border-2 border-color-accent-secondary flex-shrink-0 transition-all duration-500 hover:scale-110 hover:rotate-6 hover:border-color-accent-primary">
+            <img src="/wordwiselogo.png" alt="WordWise project" className="w-full h-full object-cover bg-black transition-transform duration-500 hover:scale-125" />
           </div>
           <div className="flex-grow">
             <a href="https://wordwise-nu.vercel.app/" target="_blank">
